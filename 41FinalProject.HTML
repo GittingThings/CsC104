@@ -1,0 +1,115 @@
+<!--Liam McCullough-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+
+    <!--Style Script-->
+    <style type="text/css">  
+        body{
+           background-color: aliceblue;
+            background-size: cover;
+
+            text-align: center;
+
+        }
+            h1 {
+                font-style: italic;
+                text-align: center ;
+            
+                color:blue;
+    
+                font-weight: 400;
+
+                background-color:paleturquoise;
+                
+                text-align: center;
+
+                padding: 20px;
+
+                border-style:groove;
+
+                border-color: black;
+
+            }
+
+            p{
+            font-family: Arial, Helvetica, sans-serif;
+            color:black;
+            padding: 10px;
+            font-size: large;
+            text-align: left;
+            }
+    
+            footer{
+                color: blue;
+                text-align: center;
+                margin-right: 200px;
+            }
+    
+            #Test{
+                color: blue;
+                font-weight: bold;
+            }
+    
+            .classtest{
+                color: darkred;
+            }
+
+            
+
+            
+        </style>
+
+<!--Script used to show a selection-->
+    <script>
+
+        function myFunction(){
+            var x = document.getElementById("mySelect").value;
+            document.getElementById("demo").innerHTML = x;
+        }
+
+    </script>
+
+</head>
+
+<!--Title and information-->
+<body>
+    <h1>Cat Adoption Page <br />
+
+    <br />
+    Phone Information/Location
+    </h1>
+    <div>
+
+<!-- Select drop down and display entry verification-->
+         <select id="mySelect" onchange="myFunction()">
+            <option value = " ">select your preffered cat</option>
+            <option value = " Short Hair">Short Hair</option>
+            <option value = " Medium Hair">Medium Hair</option>
+            <option value = " Long Hair">Long Hair</option>
+            <option value = " Gray">Gray</option>
+            <option value = " Orange">Orange</option>
+    
+        </select>
+
+        <p> You have selected
+        </p>
+
+        <p id="demo"></p>
+        
+
+        <p> As your Preffered cat
+        </p>
+
+
+ <!-- include new picture -->       
+            <img id="myImage" src=C:\Users\LiamF\JavaScript\th.jpeg
+    </div>
+         
+   
+</body>
+</html>
